@@ -1,0 +1,18 @@
+body{
+  background: #e6f2ff;
+}
+
+header{
+  margin-bottom: 7rem;
+}
+.navbar-brand{
+  width: 100%;
+  text-align: center;
+}
+
+main{
+  padding-bottom: 3px;
+}
+.card-content{
+  margin: 20px;
+}
