@@ -1,39 +1,28 @@
-body{
-  background: #e6f2ff;
-}
-
-header{
-  margin-bottom: 7rem;
-}
-.navbar-brand{
-  width: 100%;
-  text-align: center;
-}
-
-main{
-  padding-bottom: 3px;
-}
 *{
     margin: 0;
     padding: 0;
+    color: #393E46;
+}
+body{
+  background: #EEEEEE;
 }
 
-.card{
-    border: solid red 1px;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    margin: 25px;
+.content-header{
+  background: #EEEEEE;
+  width: 100%;
+  border-bottom: 2px solid #00ADB5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.small_img{
-    height: 100%;
-    cursor: pointer;
-    transition: all linear 0.4s;
+.titulo{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
 }
-.small_img:hover{
-    filter: grayscale(100%);
-    transform: scale(1.1);
+
+.container{
+
 }
 
 .row{
@@ -41,53 +30,136 @@ main{
     justify-content: center;
     flex-wrap: wrap;
 }
-
-#modal_img{
-    width: 65vw;
-    transform: scale(0);
-    transition: all linear .3s;
+.card{
+    background: #EEEEEE;
+    border: solid #00ADB5 1px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 15rem;
+    overflow: hidden;
+    margin: 25px;
+    padding: 15px;
+}
+li{
+  padding: 2px;
 }
 
-.modal_active #modal_img{
-    transform: scale(1);
+.card-content{
+  margin: auto;
+  font-size: 20px;
 }
-.modal{
-
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .7);
-    position: fixed;
-    visibility: hidden;
-    z-index: 1;
-    opacity: 0;
-    transition: visibility 0.8s linear, opacity 0.5s linear;
+ul{
+  list-style-type: none;
 }
-
-.modal_content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+a{
+  background-color: #00ADB5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  color: #EEEEEE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-
-#bt_close{
-    color:#fff;
-    background-color: #000;
-    position: absolute;
-    top:10px;
-    right: 10px;
-    padding: 5px 10px;
-    font-size: 25px;
-    border:solid 1px #fff;
-    transition: all ease-out .4s;
-    cursor: pointer;
-}
-#bt_close:hover{
-    background-color: #f00;
+a:hover{
+  background: #EEEEEE;
+  color: #00ADB5;
+  border: solid #00ADB5 1px;  padding: 15px 32px;
+  border-radius: 5px;
+  box-shadow: none;
 }
 
-.modal_active{
-    visibility: visible;
-    opacity: 1;
+.atividade-detalhes{
+  width: 40%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #EEEEEE;
+  color: #00ADB5;
+  border: solid #00ADB5 2px;  padding: 15px 32px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titulo-detalhes{
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #00ADB5 ;
+}
+
+.data-detalhes{
+  padding: 10px;
+}
+.responsavel-detalhes{
+  padding: 10px;
+}
+.situacao-detalhes{
+  padding: 10px;
+  width: auto;
+  display: inline-block;
 
 }
+.situacao-detalhes-titulo{
+  width: 50%;
+  display: inline-block;
+
+}
+.situacao{
+  width: 50%;
+  display: inline-block;
+  float: right;
+  color: red;
+}
+
+.descricao-detalhes{
+  padding: 10px;
+}
+.descrição-compromisso{
+  padding: 10px;
+  border-bottom: 1px solid #00ADB5;
+}
+.acoes-detalhes{
+  padding: 10px;
+}
+/*
+.voltar{
+  background-color: #00ADB5;
+  border-radius: 5px;
+  color: #EEEEEE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.concluir{
+  background-color: #00ADB5;
+  border-radius: 5px;
+  border: none;
+  color: #EEEEEE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.editar{
+  background-color: #00ADB5;
+  border-radius: 5px;
+  border: none;
+  color: #EEEEEE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+*/
