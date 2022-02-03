@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Agenda de Compromissos</title>
   </head>
-  <body>
+  <body onload="status()">
         <div class="content-header">
           <div class="titulo">
             <h1> <b>Agenda de Compromissos</b></h1>
           </div>
+        </div>
+
+        <div class="menu">
         </div>
 
         <div class="container">
@@ -21,7 +24,7 @@
               <div class="atividade-detalhes">
                 <div class="titulo-detalhes"><b>Compromisso: </b>Dentista
                 </div>
-                <div class="data-detalhes"><b>Data e Hora: </b> 17/09/2022 - 8h00
+                <div id="data" class="data-detalhes"><b>Data e Hora: </b> 17/09/2023 - 8h00
                 </div>
                 <div class="responsavel-detalhes"><b>Resposável: </b>José
                 </div>
@@ -29,7 +32,7 @@
                   <div class="situacao-detalhes-titulo">
                   <b>Staus:</b>
                   </div>
-                  <div class="situacao"> Aberto </div>
+                  <div id="situacao" class="situacao"> Aberto </div>
                 </div>
                 <div class="descricao-detalhes"><b>Descrição: </b>
                   <div class="descrição-compromisso">
@@ -37,9 +40,10 @@
                   </div>
                 </div>
                 <div class="acoes-detalhes">
-                  <a href="index.html" class="voltar">Voltar</a>
-                  <a href="#" class="concluir">Concluir</a>
-                  <a href="#" class="editar">Editar</a>
+                  <a href="index.html" class="botao">Voltar</a>
+                  <a href="#" class="botao">Editar</a>
+                  <a href="#" class="botao">Concluir</a>
+                  <a href="#" class="botao">Excluir</a>
                 </div>
               </div>
             </div>
