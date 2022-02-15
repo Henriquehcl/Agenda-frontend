@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Agenda de Compromissos</title>
   </head>
-  <body>
+  <body onload="preenche_data()">
     <div class="content-header">
       <div class="titulo">
         <h1> <b>Agenda de Compromissos</b></h1>
@@ -49,7 +49,9 @@
             </div>
 
             ---->
-            <form action="/action_page.php">
+          <div id="teste">
+          </div>
+            <form action="#" name="formulario">
               <div class="titulo-detalhes">
               <label for="fname">Assunto</label>
               <input type="text" id="assunto" name="assunto" placeholder="Assunto da atividade">
@@ -62,7 +64,7 @@
               </select>
               -->
               <label for="lname">Data</label>
-              <input type="datetime-local" id="data" name="data" >
+              <input type="datetime-local" id="data" name="data" autocomplete="on" >
               </div>
               <div class="descricao-compromisso">
               <label for="lname">Descrição</label>
@@ -70,12 +72,13 @@
               </div>
 
               <div class="acoes-detalhes">
-                <a href="index.html" class="botao">Salvar</a>
+                <button type="button" class="botao" onclick="valida_campo()">Enviar</button>
                 <a href="#" class="botao">Cancelar</a>
               </div>
             </form>
           </div>
         </div>
    </div>
+   <script src="js/script.js"></script>
   </body>
 </html>

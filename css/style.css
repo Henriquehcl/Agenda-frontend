@@ -29,6 +29,10 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+.menu-situacao{
+  justify-content: flex-end;
+
+}
 .card{
     border: solid #00ADB5 1px;
     border-radius: 6px;
@@ -145,7 +149,7 @@ ul{
   display: inline-block;
   float: right;
   font-weight: bold;
-  color: red;
+  color: #df2020;
 }
 .descricao-detalhes{
   padding: 10px;
@@ -169,19 +173,20 @@ input, select , textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
-/*
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+.bt-concluido{
+  border: solid 1px #00ADB5;
+  border-radius: none;
+  color: #393E46;
+  box-shadow: none;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.bt-aberto{
+  border: solid 1px #00ADB5;
+  box-shadow: none;
 }
-*/
+.bt-atrasado{
+  border: solid 1px #00ADB5;
+  color: #df2020;
+  box-shadow: none
+}
